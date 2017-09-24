@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SEARCHING</title>
+
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style type="text/css">
+
+		.text{
+			padding: 30px 200px 30px 200px ;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+						<a class="navbar-brand" href="about.html">ABOUT</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li ><a href="ds.html">HOME <span class="sr-only">(current)</a></li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">DISCUSSIONS</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+	</header>
+	<h1 align="center"><u>SEARCHING</u></h1>
+	<p class="text">Searching is an operation or a technique that helps finds the place of a given element or value in the list. Any search is said to be successful or unsuccessful depending upon whether the element that is being searched is found or not. Some of the standard searching technique that is being followed in data structure is listed below:
+
+  </p>
+  			<ul class="text">
+  				<li>Linear Search OR Sequencial Search</li>
+  				<li>Binary Search</li>
+  			</ul>
+  			<h3 class="text"><u>LINEAR SEARCH</u></h3>
+<p class="text">This is the simplest method for searching. In this technique of searching, the element to be found in searching the elements to be found is searched sequentially in the list. This method can be performed on a sorted or an unsorted list (usually arrays). In case of a sorted list searching starts from 0th element and continues until the element is found from the list or the element whose value is greater than (assuming the list is sorted in ascending order), the value being searched is reached.
+
+As against this, searching in case of unsorted list also begins from the 0th element and continues until the element or the end of the list is reached.
+</p>
+
+<center><img src="ls1.png" alt="SEARCHING HELP" class="img"></center>
+<p class="text">
+	EXAMPLE: <BR>
+The list given aboves is the list of elements in an unsorted array. The array contains 10 elements. Suppose the element to be searched is ’46’, so 46 is compared with all the elements starting from the 0th element and searching process ends where 46 is found or the list ends.
+
+The performance of the linear search can be measured by counting the comparisons done to find out an element. The number of comparison is 0(n).</p>
+
+
+<h3 class="text"><u>BINARY SEARCH</u></h3>
+<p class="text">Binary search is a very fast and efficient searching technique. It requires the list to be in sorted order. In this method, to search an element you can compare it with the present element at the center of the list. If it matches, then the search is successful otherwise the list is divided into two halves: one from the 0th element to the middle element which is the center element (first half) another from the center element to the last element (which is the 2nd half) where all values are greater than the center element.
+
+The searching mechanism proceeds from either of the two halves depending upon whether the target element is greater or smaller than the central element. If the element is smaller than the central element, then searching is done in the first half, otherwise searching is done in the second half.
+</p>
+
+<center><img src="bs1.png" alt="SEARCHING HELP" class="img"></center>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

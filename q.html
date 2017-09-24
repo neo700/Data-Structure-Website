@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>QUEUE</title>
+
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<style type="text/css">
+
+		.text{
+			padding: 30px 200px 30px 200px ;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+						<a class="navbar-brand " href="#">ABOUT</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li ><a href="ds.html">HOME <span class="sr-only">(current)</span></a></li>
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">DISCUSSIONS</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</div>
+	</header>
+	<h1 align="center"><u>QUEUE</u></h1>
+	<p class="text">Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO).  A good example of queue is any queue of consumers for a resource where the consumer that came first is served first.
+The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
+
+Operations on Queue:
+Mainly the following four basic operations are performed on queue:
+
+Enqueue: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.
+Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.
+Front: Get the front item from queue.
+Rear: Get the last item from queue.</p>
+<center><img src="Queue.png" alt="STACK HELP" class="img"></center>
+<p class="text">Applications of Queue:
+Queue is used when things don’t have to be processed immediatly,
+but have to be processed in First InFirst Out order like Breadth First Search.
+This property of Queue makes it also useful in following kind of scenarios.</p>
+<ul class="text">
+<li>1) When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.</li>
+<li>2) When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes. Examples include IO Buffers, pipes, file IO, etc.</li>
+</ul>
+<p class="text">
+See this for more detailed applications of Queue and Stack.
+Array implementation Of Queue
+For implementing queue, we need to keep track of two indices, front and rear. We enqueue an item at the rear and dequeue an item from front. If we simply increment front and rear indices, then there may be problems, front may reach end of the array.
+The solution to this problem is to increase front and rear in circular manner (See this for details).
+</p>
+<!--<center><img src="2.png" alt="ARRAY HELP" class="img"></center>
+
+<p class="text">Applications of stack:
+<ul class="text">
+Balancing of symbols
+
+<li>Infix to Postfix /Prefix conversion</li>
+<li>Redo-undo features at many places like editors, photoshop.</li>
+</li>Forward and backward feature in web browsers</li>
+<li>Used in many algorithms like Tower of Hanoi, tree traversals, stock span problem, histogram problem.</li>
+</ul>
+<p class="text">Other applications can be Backtracking, Knight tour problem, rat in a maze, N queen problem and sudoku solver.</p>
+<em class ="text">Implementation:</em>
+<p class="text">There are two ways to implement a stack:</p>
+<ul class="text">
+<li>Using array</li>
+<li>Using linked list</li>
+</p>
+-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
